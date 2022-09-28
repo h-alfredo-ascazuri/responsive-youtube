@@ -47,14 +47,14 @@ header h4{
 }
 
 /*CARRUSEL*/
-#carrusel{
+#conferencia{
     padding: 0px 50px;
     background-image: url(./images/ba1.jpg);
     height: 89vh;
     background-size: cover;
     background-position: center;
 }
-#carrusel::before{
+#conferencia::before{
     content:'';
     background: rgba(70, 35, 35, 0.432);
     position: absolute;
@@ -62,7 +62,7 @@ header h4{
     height: 89vh;
     left: 0;
 }
-.contenido-carrusel {
+.contenido-conferencia{
     position: relative;
     color: white;
     height: 100%;
@@ -70,11 +70,11 @@ header h4{
     flex-direction: column;
     justify-content: center;
 }
-.contenido-carrusel h3{
+.contenido-conferencia h3{
     font-size: 30px;
     padding: 10px 0px;
 }
-.contenido-carrusel p{
+.contenido-conferencia p{
     padding: 10px 0px;
 }
 .boton-ser-orador{
@@ -106,6 +106,68 @@ header h4{
 .boton-tickets:hover{
     background: none;
     border: 1px solid gray;
+}
+
+/*ORADORES*/
+#oradores{
+    padding: 50px 50px;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+}
+#oradores img{
+    border-radius: 2%;
+    width: 100%;
+}
+#oradores div{
+    padding: 30px 40px;
+}
+#oradores div h4{
+    margin: 15px 0px;
+}
+#oradores div p{
+    text-align: left;
+    color: gray;
+}
+.boton-js{
+    margin-top: 20px;
+    font-size: 60%;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    background-color: #ffc900;
+    border-radius: 5%;
+    padding: 5px;
+}
+.boton-r{
+    margin-top: 20px;
+    font-size: 60%;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: #33a1d4;
+    border-radius: 5%;
+    padding: 5px;
+}
+.boton-negocios{
+    margin-top: 20px;
+    font-size: 60%;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: gray;
+    border-radius: 5%;
+    padding: 5px;
+}
+.boton-start{
+    margin-top: 20px;
+    font-size: 60%;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    border-radius: 5%;
+    padding: 5px;
 }
 
 /*RESPONSIVE*/
