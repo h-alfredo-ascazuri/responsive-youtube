@@ -46,6 +46,68 @@ header h4{
     display: none;
 }
 
+/*CARRUSEL*/
+#carrusel{
+    padding: 0px 50px;
+    background-image: url(./images/ba1.jpg);
+    height: 89vh;
+    background-size: cover;
+    background-position: center;
+}
+#carrusel::before{
+    content:'';
+    background: rgba(70, 35, 35, 0.432);
+    position: absolute;
+    width: 100%;
+    height: 89vh;
+    left: 0;
+}
+.contenido-carrusel {
+    position: relative;
+    color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contenido-carrusel h3{
+    font-size: 30px;
+    padding: 10px 0px;
+}
+.contenido-carrusel p{
+    padding: 10px 0px;
+}
+.boton-ser-orador{
+    padding: 10px 0px;
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 20px 20px;
+    border-radius: 5px;
+    align-self: baseline;
+    transition: all 0.4s;
+}
+.boton-tickets{
+    padding: 10px 0px;
+    background-color: green;
+    border: 1px solid green;
+    color: white;
+    text-decoration: none;
+    padding: 20px 20px;
+    border-radius: 5px;
+    align-self: baseline;
+    transition: all 0.4s;
+}
+
+.boton-ser-orador:hover{
+    border: 1px solid gray;
+    
+}
+.boton-tickets:hover{
+    background: none;
+    border: 1px solid gray;
+}
+
 /*RESPONSIVE*/
 @media(max-width: 1048px){
     /*HEADER*/
