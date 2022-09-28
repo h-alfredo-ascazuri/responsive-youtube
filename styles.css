@@ -15,9 +15,9 @@ header{
     align-items: center;
 }
 header img{
-    height: 15vh;
+    height: 10vh;
 }
-header h3{
+header h4{
     color: white;
 }
 .menu a{
