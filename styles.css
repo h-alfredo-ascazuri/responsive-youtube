@@ -113,11 +113,11 @@ header h4{
     padding: 50px 50px;
     display: flex;
     justify-content: center;
-    text-align: left;
+    text-align: center;
 }
 #oradores img{
     border-radius: 2%;
-    width: 100%;
+    
 }
 #oradores div{
     padding: 30px 40px;
@@ -200,5 +200,10 @@ header h4{
     }
     #check:checked ~.menu{
         right: 0;
+    }
+    /*ORADORES*/
+    #oradores{
+        flex-direction: column;
+        
     }
 }
