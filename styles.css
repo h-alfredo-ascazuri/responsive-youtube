@@ -8,7 +8,7 @@
 /* HEADER */
 header{
     height: 100px;
-    background: #2d2d3d;
+    background: #353a40;
     padding: 0px 50px;
     display: flex;
     justify-content: space-between;
@@ -89,8 +89,8 @@ header h4{
 }
 .boton-tickets{
     padding: 10px 0px;
-    background-color: green;
-    border: 1px solid green;
+    background-color: #27a844;
+    border: 1px solid #27a844;
     color: white;
     text-decoration: none;
     padding: 20px 20px;
@@ -170,6 +170,31 @@ header h4{
     padding: 5px;
 }
 
+/*FOOTER*/
+#footer{
+    padding: 50px 300px;
+    background: #1c3846;
+}
+.contenido-footer{
+    padding: 0px 10px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.contenido-footer div{
+    flex: 1;
+    margin: 20px 0px;
+}
+.contenido-footer a{
+    text-decoration: none;
+    color: white;
+    transition: all 0.4s;
+
+}
+.contenido-footer a:hover{
+    color: gray;
+}
+
 /*RESPONSIVE*/
 @media(max-width: 1048px){
     /*HEADER*/
@@ -204,6 +229,12 @@ header h4{
     /*ORADORES*/
     #oradores{
         flex-direction: column;
-        
+    }
+    /*FOOTER*/
+    .contenido-footer{
+        flex-direction: column;
+    }
+    .contenido-footer a{
+        padding: 10px 0px;
     }
 }
