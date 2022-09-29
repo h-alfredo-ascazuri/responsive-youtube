@@ -174,7 +174,62 @@ header h4{
 
 /*CONVIERTETE EN ORADOR*/
 #conviertete-en-orador{
-
+    padding: 50px 0px;
+}
+#conviertete-en-orador h6{
+    text-align: center;
+    margin-bottom: 5px;
+}
+#conviertete-en-orador h1{
+    text-align: center;
+    font-size: 27px;
+    margin-bottom: 10px;
+}
+#conviertete-en-orador p{
+    text-align: center;
+    margin-bottom: 10px;
+}
+#conviertete-en-orador form{
+    max-width: 80%;
+    margin: 0px auto;
+}
+.datos-form{
+    display: flex;
+}
+.datos-form div{
+    padding: 10px;
+    flex: 1;
+}
+form label{
+    display: block;
+    margin-bottom: 35px;
+    font-size: 15px;
+}
+form input,
+form textarea{
+    border-radius: 5px;
+    border: 2px solid gray;
+    padding: 10px 5px;
+    outline: 0;
+    width: 100%;
+}
+form input:focus,
+form textarea:focus{
+    border-color: black;
+    box-shadow: 0px 0px 0px 1px black;
+}
+.tema{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.boton-form .boton-tickets{
+    display: block;
+    text-align: center;
+    margin-left: 10px;
+}
+.boton-form .boton-tickets:hover{
+    color: gray;
 }
 
 /*FOOTER*/
@@ -236,6 +291,11 @@ header h4{
 
     /*ORADORES*/
     #oradores{
+        flex-direction: column;
+    }
+
+    /*CONVIERTETE EN ORADOR*/
+    .datos-form{
         flex-direction: column;
     }
 
