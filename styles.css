@@ -73,35 +73,40 @@ header h4{
 .contenido-conferencia h3{
     font-size: 30px;
     padding: 10px 0px;
+    text-align: end;
 }
 .contenido-conferencia p{
     padding: 10px 0px;
+    text-align: end;
+    margin-left: 25vw;
 }
 .boton-ser-orador{
     padding: 10px 0px;
+    display: inline-block;
     color: white;
     text-decoration: none;
     border: 1px solid white;
     padding: 20px 20px;
     border-radius: 5px;
-    align-self: baseline;
+    align-self: flex-end;
     transition: all 0.4s;
 }
 .boton-tickets{
     padding: 10px 0px;
+    display: inline-block;
     background-color: #27a844;
     border: 1px solid #27a844;
     color: white;
     text-decoration: none;
     padding: 20px 20px;
     border-radius: 5px;
-    align-self: baseline;
+    align-self: flex-end;
     transition: all 0.4s;
 }
 
 .boton-ser-orador:hover{
     border: 1px solid gray;
-    
+
 }
 .boton-tickets:hover{
     background: none;
@@ -171,6 +176,43 @@ header h4{
 }
 
 /*LUGAR Y FECHA*/
+#lugar-fecha{
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#lugar-fecha img{
+    width: 50vw;
+}
+#lugar-fecha div{
+    background: #353a40;
+}
+#lugar-fecha div h3{
+    margin: 15px  0px;
+    padding: 0px 15px;
+    text-align: left;
+    color: white;
+}
+#lugar-fecha div p{
+    margin: 0px 0px 50px 0px;
+    padding: 0px 15px;
+    text-align: left;
+    color: white;
+}
+.boton-lugar-fecha{
+    margin: 50px;
+    padding: 20px 20px;
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 5px;
+    align-self: baseline;
+    transition: all 0.4s;
+}
+.boton-lugar-fecha:hover{
+    border: 1px solid gray;
+}
 
 /*CONVIERTETE EN ORADOR*/
 #conviertete-en-orador{
@@ -222,6 +264,9 @@ form textarea:focus{
     display: flex;
     flex-direction: column;
     padding: 10px;
+}
+#conviertete-en-orador label{
+    color: gray;
 }
 .boton-form .boton-tickets{
     display: block;
@@ -292,6 +337,15 @@ form textarea:focus{
     /*ORADORES*/
     #oradores{
         flex-direction: column;
+    }
+    
+
+    /*LUGAR Y FECHA*/
+    #lugar-fecha{
+    flex-direction: column;
+    }
+    #lugar-fecha img{
+        width: 100vw;
     }
 
     /*CONVIERTETE EN ORADOR*/
